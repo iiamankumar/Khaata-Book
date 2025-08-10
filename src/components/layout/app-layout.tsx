@@ -1,3 +1,4 @@
+
 "use client";
 
 import React from 'react';
@@ -83,14 +84,13 @@ export function AppLayout({ children }: { children: React.ReactNode }) {
             </SheetTrigger>
             <SheetContent side="left" className="flex flex-col">
               <SheetHeader>
-                <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
+                <SheetTitle>
+                   <Link href="/" className="flex items-center gap-2 font-semibold">
+                     <Icons.logo className="h-6 w-6 text-primary" />
+                     <span className="">KhaataBook</span>
+                   </Link>
+                </SheetTitle>
               </SheetHeader>
-              <div className="flex h-14 items-center border-b px-4">
-                 <Link href="/" className="flex items-center gap-2 font-semibold">
-                   <Icons.logo className="h-6 w-6 text-primary" />
-                   <span className="">KhaataBook</span>
-                 </Link>
-              </div>
               <NavContent />
             </SheetContent>
           </Sheet>
@@ -108,8 +108,12 @@ export function AppLayout({ children }: { children: React.ReactNode }) {
             <DropdownMenuContent align="end">
               <DropdownMenuLabel>My Account</DropdownMenuLabel>
               <DropdownMenuSeparator />
-              <DropdownMenuItem>Settings</DropdownMenuItem>
-              <DropdownMenuItem>Support</DropdownMenuItem>
+              <DropdownMenuItem asChild>
+                <Link href="/settings">Settings</Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem asChild>
+                <Link href="/support">Support</Link>
+              </DropdownMenuItem>
               <DropdownMenuSeparator />
               <DropdownMenuItem>Logout</DropdownMenuItem>
             </DropdownMenuContent>
