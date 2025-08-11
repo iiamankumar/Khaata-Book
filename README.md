@@ -22,9 +22,8 @@ Our goal is to empower students to take control of their financial lives, build 
 
 • ⚙️ User Settings: Customize your profile and manage your notification preferences to tailor the app experience to your needs.
 
+# The Problem we're Solving
 Managing money as a college student in India is tough. Students often grapple with:
-
-# The Problem we are solving 
 
 • Limited Allowances: Trying to make a fixed monthly allowance cover everything from fees and food to fun and emergencies.
 • The UPI Effect: Frequent, small digital transactions are hard to track, leading to a disconnect from actual spending.
